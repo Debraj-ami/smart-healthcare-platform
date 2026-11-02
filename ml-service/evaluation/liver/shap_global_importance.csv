@@ -1,0 +1,31 @@
+Model,Feature,Mean_Absolute_SHAP
+Logistic Regression,num__Age,0.23025
+Logistic Regression,num__Total_Bilirubin,0.28231
+Logistic Regression,num__Direct_Bilirubin,0.63047
+Logistic Regression,num__Alkphos,0.1398
+Logistic Regression,num__Sgpt,0.43372
+Logistic Regression,num__Sgot,0.27646
+Logistic Regression,num__Total_Proteins,0.5486
+Logistic Regression,num__Albumin,0.5829
+Logistic Regression,num__A_G_Ratio,0.1223
+Logistic Regression,cat__Gender_Male,0.09057
+Random Forest,num__Age,0.03089
+Random Forest,num__Total_Bilirubin,0.03574
+Random Forest,num__Direct_Bilirubin,0.04668
+Random Forest,num__Alkphos,0.04386
+Random Forest,num__Sgpt,0.04277
+Random Forest,num__Sgot,0.03358
+Random Forest,num__Total_Proteins,0.02386
+Random Forest,num__Albumin,0.01851
+Random Forest,num__A_G_Ratio,0.01777
+Random Forest,cat__Gender_Male,0.00575
+XGBoost,num__Age,0.86924
+XGBoost,num__Total_Bilirubin,0.45462
+XGBoost,num__Direct_Bilirubin,0.71658
+XGBoost,num__Alkphos,0.71904
+XGBoost,num__Sgpt,0.64686
+XGBoost,num__Sgot,0.48924
+XGBoost,num__Total_Proteins,0.61696
+XGBoost,num__Albumin,0.40108
+XGBoost,num__A_G_Ratio,0.5021
+XGBoost,cat__Gender_Male,0.08886

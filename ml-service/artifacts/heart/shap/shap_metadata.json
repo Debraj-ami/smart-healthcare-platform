@@ -1,0 +1,50 @@
+{
+  "disease": "Heart Disease (Cleveland)",
+  "phase": "Phase 8: SHAP Explainability & Feature Attributions",
+  "primary_model": {
+    "name": "Logistic Regression (Robust L1)",
+    "family": "LogisticRegression",
+    "config_id": "LR_robust_l1_C1.0",
+    "scaler": "robust",
+    "penalty": "l1",
+    "C": 1.0,
+    "solver": "liblinear",
+    "calibration": "Uncalibrated Baseline (Natively Calibrated in Phase 7)",
+    "output_space": "log-odds (decision_function)",
+    "shap_explainer": "shap.LinearExplainer",
+    "background_masker": "shap.maskers.Independent(X_train_transformed)",
+    "background_samples": 242
+  },
+  "comparative_models": [
+    {
+      "name": "Random Forest (n=200, leaf=5)",
+      "family": "RandomForest",
+      "shap_explainer": "shap.TreeExplainer",
+      "output_space": "probability (class 1)"
+    },
+    {
+      "name": "XGBoost (n=100, depth=2, lr=0.05)",
+      "family": "XGBoost",
+      "shap_explainer": "shap.TreeExplainer",
+      "output_space": "log-odds-margin"
+    }
+  ],
+  "dataset_integrity": {
+    "md5": "2d91a8ff69cfd9616aa47b59d6f843db",
+    "sha256": "a74b7efa387bc9d108d7d0115d831fe9b414b29ae7124f331b622b4efa0427c8",
+    "file_size": 18461
+  },
+  "top_5_global_features_lr": [
+    "Fluoroscopy Vessels (ca)",
+    "Thallium: Reversible Defect",
+    "Chest Pain: Asymptomatic",
+    "Sex (Male)",
+    "ST Slope: Flat"
+  ],
+  "interpretability_safety_rules": [
+    "SHAP explains model mathematical output, not biological causation",
+    "Model-estimated probabilities do not constitute clinical diagnosis",
+    "Individual contributions reflect relative feature weights on this cohort",
+    "Transformed one-hot indicators retain explicit reference mapping"
+  ]
+}

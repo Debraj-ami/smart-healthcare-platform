@@ -1,0 +1,45 @@
+{
+  "disease": "HEART_DISEASE",
+  "model_name": "Logistic Regression (Robust L1)",
+  "model_version": "1.0.0",
+  "config_id": "LR_robust_l1_C1.0",
+  "training_samples": 242,
+  "holdout_samples": 61,
+  "random_state": 42,
+  "configured_threshold": 0.31,
+  "threshold_policy": "High-Sensitivity Screening (target >= 90% sensitivity on training OOF)",
+  "calibration_status": "Comparatively good empirical calibration on this dataset (Brier=0.1188, ECE=0.0383, Slope=1.0704); post-hoc calibration did not demonstrate consistent improvement.",
+  "output_space": "log-odds",
+  "experimental_holdout_metrics": {
+    "brier_score": 0.0886,
+    "log_loss": 0.3019,
+    "roc_auc": 0.9513,
+    "pr_auc": 0.9274
+  },
+  "transformed_features": [
+    "num__age",
+    "num__trestbps",
+    "num__chol",
+    "num__thalach",
+    "num__oldpeak",
+    "bin__sex",
+    "bin__fbs",
+    "bin__exang",
+    "cat__cp_2.0",
+    "cat__cp_3.0",
+    "cat__cp_4.0",
+    "cat__restecg_1.0",
+    "cat__restecg_2.0",
+    "cat__slope_2.0",
+    "cat__slope_3.0",
+    "cat__thal_6.0",
+    "cat__thal_7.0",
+    "count__ca"
+  ],
+  "dataset_integrity": {
+    "md5": "2d91a8ff69cfd9616aa47b59d6f843db",
+    "sha256": "a74b7efa387bc9d108d7d0115d831fe9b414b29ae7124f331b622b4efa0427c8",
+    "file_size": 18461
+  },
+  "disclaimer": "Research screening decision support tool. Model outputs are statistical probability estimates and do not constitute clinical diagnosis or medical proof of coronary artery disease. Feature attributions explain model behavior and do not establish biological causation."
+}

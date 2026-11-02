@@ -1,0 +1,44 @@
+{
+  "disease": "Heart Disease (Cleveland)",
+  "phase": "Phase 7: Probability Calibration",
+  "random_state": 42,
+  "n_train": 242,
+  "n_test": 61,
+  "cv_folds_development": 5,
+  "calibrator_cv_internal": 5,
+  "calibrator_methods": [
+    "Uncalibrated",
+    "Sigmoid",
+    "Isotonic"
+  ],
+  "models_evaluated": [
+    "Logistic Regression (Robust L1)",
+    "Random Forest (n=200, leaf=5)",
+    "XGBoost (n=100, depth=2, lr=0.05)"
+  ],
+  "dataset_integrity": {
+    "md5": "2d91a8ff69cfd9616aa47b59d6f843db",
+    "sha256": "a74b7efa387bc9d108d7d0115d831fe9b414b29ae7124f331b622b4efa0427c8",
+    "file_size": 18461
+  },
+  "phase6_thresholds_referenced": {
+    "Logistic Regression": {
+      "high_sens_thresh": 0.31,
+      "youden_thresh": 0.56
+    },
+    "Random Forest": {
+      "high_sens_thresh": 0.32,
+      "youden_thresh": 0.55
+    },
+    "XGBoost": {
+      "high_sens_thresh": 0.24,
+      "youden_thresh": 0.62
+    }
+  },
+  "leakage_safeguards": [
+    "Calibration fitting strictly isolated to training cohort",
+    "Holdout test set untouched until descriptive evaluation",
+    "Cross-fitting used inside CV folds to prevent target leakage",
+    "Isotonic overfitting risk explicitly documented"
+  ]
+}

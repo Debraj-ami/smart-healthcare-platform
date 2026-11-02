@@ -1,0 +1,28 @@
+{
+  "disease": "LIVER_DISEASE",
+  "model_name": "Logistic Regression + Isotonic Calibration",
+  "model_version": "1.0.0",
+  "training_samples": 456,
+  "holdout_samples": 114,
+  "random_state": 42,
+  "experimental_holdout_metrics": {
+    "brier_score": 0.1576,
+    "log_loss": 0.4472,
+    "roc_auc": 0.8122,
+    "pr_auc": 0.9273
+  },
+  
+  "transformed_features": [
+    "num__Age",
+    "num__Total_Bilirubin",
+    "num__Direct_Bilirubin",
+    "num__Alkphos",
+    "num__Sgpt",
+    "num__Sgot",
+    "num__Total_Proteins",
+    "num__Albumin",
+    "num__A_G_Ratio",
+    "cat__Gender_Male"
+  ],
+  "disclaimer": "Research screening tool. Not clinically validated for diagnostic use. Feature contributions explain model behavior and do not establish biological causation."
+}

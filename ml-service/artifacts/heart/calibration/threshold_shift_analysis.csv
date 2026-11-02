@@ -1,0 +1,7 @@
+model,calibration_method,phase6_uncal_high_sens_threshold,uncal_high_sens_recall,uncal_high_sens_specificity,calibrated_high_sens_threshold,calibrated_high_sens_recall,calibrated_high_sens_specificity,phase6_uncal_youden_threshold,calibrated_youden_threshold,calibrated_youden_recall,calibrated_youden_specificity,calibrated_youden_j,uncal_at_050_recall,uncal_at_050_specificity,cal_at_050_recall,cal_at_050_specificity
+Logistic Regression,Sigmoid,0.31,0.8919,0.7099,0.32,0.9009,0.7023,0.56,0.45,0.8468,0.8779,0.7247,0.8018,0.8779,0.7658,0.9237
+Logistic Regression,Isotonic,0.31,0.8919,0.7099,0.33,0.9099,0.7557,0.56,0.45,0.8198,0.9084,0.7282,0.8018,0.8779,0.8018,0.916
+Random Forest,Sigmoid,0.32,0.8919,0.6641,0.24,0.9099,0.6107,0.55,0.64,0.7297,0.9389,0.6687,0.7838,0.8626,0.7838,0.8321
+Random Forest,Isotonic,0.32,0.8919,0.6641,0.26,0.9009,0.5649,0.55,0.58,0.7387,0.9389,0.6777,0.7838,0.8626,0.7748,0.8779
+XGBoost,Sigmoid,0.24,0.8829,0.5954,0.24,0.9009,0.5954,0.62,0.55,0.7568,0.8931,0.6499,0.7838,0.855,0.7748,0.8473
+XGBoost,Isotonic,0.24,0.8829,0.5954,0.27,0.9009,0.5802,0.62,0.62,0.7117,0.9466,0.6583,0.7838,0.855,0.7477,0.8092

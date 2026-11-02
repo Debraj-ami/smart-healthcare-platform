@@ -1,0 +1,11 @@
+rank,lr_feature,lr_mean_abs_shap,rf_feature,rf_mean_abs_shap,xgb_feature,xgb_mean_abs_shap
+1,Fluoroscopy Vessels (ca),1.0232,Fluoroscopy Vessels (ca),0.0738,Fluoroscopy Vessels (ca),0.69
+2,Thallium: Reversible Defect,0.6065,Thallium: Normal,0.0735,Chest Pain: Asymptomatic,0.5448
+3,Chest Pain: Asymptomatic,0.5578,Thallium: Reversible Defect,0.068,Thallium: Normal,0.3953
+4,Sex (Male),0.5094,Chest Pain: Asymptomatic,0.0668,Thallium: Reversible Defect,0.3508
+5,ST Slope: Flat,0.4248,ST Depression (Oldpeak),0.0372,ST Depression (Oldpeak),0.3025
+6,Maximum Heart Rate,0.2747,Maximum Heart Rate,0.0345,Sex (Male),0.2799
+7,Exercise-Induced Angina,0.2023,Exercise-Induced Angina,0.0341,Maximum Heart Rate,0.1904
+8,Resting Blood Pressure,0.1729,ST Slope: Upsloping,0.0262,Age,0.1501
+9,ST Depression (Oldpeak),0.1676,Sex (Male),0.0232,ST Slope: Flat,0.137
+10,Resting ECG: LV Hypertrophy,0.1164,Age,0.0215,Serum Cholesterol,0.1275

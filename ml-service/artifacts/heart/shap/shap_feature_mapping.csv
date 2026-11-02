@@ -1,0 +1,19 @@
+feature_index,transformed_feature,original_feature,display_name,feature_group,description
+1,num__age,age,Age,numerical,Patient age in years
+2,num__trestbps,trestbps,Resting Blood Pressure,numerical,Resting blood pressure (mm Hg on admission)
+3,num__chol,chol,Serum Cholesterol,numerical,Serum cholesterol in mg/dl
+4,num__thalach,thalach,Maximum Heart Rate,numerical,Maximum heart rate achieved during exercise stress test
+5,num__oldpeak,oldpeak,ST Depression (Oldpeak),numerical,ST depression induced by exercise relative to rest
+6,bin__sex,sex,Sex (Male),binary,"Biological sex (1 = male, 0 = female)"
+7,bin__fbs,fbs,Fasting Blood Sugar > 120,binary,"Fasting blood sugar > 120 mg/dl (1 = true, 0 = false)"
+8,bin__exang,exang,Exercise-Induced Angina,binary,"Exercise-induced angina (1 = yes, 0 = no)"
+9,cat__cp_2.0,cp,Chest Pain: Atypical Angina,categorical,Chest pain type 2: atypical angina
+10,cat__cp_3.0,cp,Chest Pain: Non-Anginal,categorical,Chest pain type 3: non-anginal pain
+11,cat__cp_4.0,cp,Chest Pain: Asymptomatic,categorical,Chest pain type 4: asymptomatic ischaemia
+12,cat__restecg_1.0,restecg,Resting ECG: ST-T Abnormality,categorical,Resting ECG: ST-T wave abnormality
+13,cat__restecg_2.0,restecg,Resting ECG: LV Hypertrophy,categorical,Resting ECG: probable or definite left ventricular hypertrophy
+14,cat__slope_2.0,slope,ST Slope: Flat,categorical,Slope of peak exercise ST segment: flat
+15,cat__slope_3.0,slope,ST Slope: Downsloping,categorical,Slope of peak exercise ST segment: downsloping
+16,cat__thal_6.0,thal,Thallium: Fixed Defect,categorical,Thallium scintigraphy defect: fixed defect (previous infarction)
+17,cat__thal_7.0,thal,Thallium: Reversible Defect,categorical,Thallium scintigraphy defect: reversible defect (ischemia)
+18,count__ca,ca,Fluoroscopy Vessels (ca),count,Number of major vessels (0-3) colored by fluoroscopy

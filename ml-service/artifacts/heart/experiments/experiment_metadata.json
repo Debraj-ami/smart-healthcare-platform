@@ -1,0 +1,18 @@
+{
+  "dataset": "processed.cleveland.data",
+  "dataset_rows": 303,
+  "dataset_cols": 14,
+  "n_train": 242,
+  "n_test": 61,
+  "md5_checksum": "2d91a8ff69cfd9616aa47b59d6f843db",
+  "sha256_checksum": "a74b7efa387bc9d108d7d0115d831fe9b414b29ae7124f331b622b4efa0427c8",
+  "random_state": 42,
+  "cv_strategy": "RepeatedStratifiedKFold(n_splits=5, n_repeats=5, random_state=42)",
+  "n_cv_folds": 25,
+  "n_configurations_evaluated": 44,
+  "finalist_candidates": [
+    "LogisticRegression (Robust L1)",
+    "RandomForest (n=200, leaf=5)",
+    "XGBoost (n=100, depth=2, lr=0.05)"
+  ]
+}
